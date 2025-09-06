@@ -1,0 +1,34 @@
+machine:
+  namespace: static-site
+  name: nginx
+  image: ${{ var.docker_username }}/static-site:latest
+  resources:
+    # The smallest number of CPUs we can actually have
+    cpu: 1
+    # The smallest amount of memory we can actually have
+    memory: 64
+  mode:
+    # This tells lttle.cloud that 5 seconds after nginx starts listening
+    # we can stop the machine if it is not receiving any traffic
+    flash:
+      timeout: 5
+      strategy:
+        listen-on-port: 80
+---
+service:
+  namespace: static-site
+  name: ingress
+  # This service will target our nginx machine
+  # And it tell lttle.cloud to route traffic to it
+  target:
+    name: nginx
+    port: 80
+    protocol: http
+    # This tell lttle.cloud to snapshot the machine
+    # when the machine has no active connections
+    connection-tracking: connection-aware
+  bind:
+    external:
+      # This is where the service will be available
+      host: static-site-${{ var.docker_username }}.eu.lttle.host
+      protocol: https

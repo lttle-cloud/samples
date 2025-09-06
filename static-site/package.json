@@ -1,0 +1,15 @@
+{
+  "name": "static-site",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "./build.sh",
+    "build:astro": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.13.5"
+  }
+}
