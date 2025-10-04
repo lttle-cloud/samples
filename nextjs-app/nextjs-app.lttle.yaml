@@ -1,0 +1,68 @@
+volume:
+  namespace: samples
+  name: nextjs-pgdata
+  mode: writeable
+  size: 100Mi
+---
+app:
+  namespace: samples
+  name: nextjs-pg
+  image: ghcr.io/lttle-cloud/postgres:17-flash
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      strategy: manual
+      timeout: 3
+  volumes:
+    - name: nextjs-pgdata
+      path: /var/lib/postgresql/data
+  environment:
+    POSTGRES_PASSWORD: password
+    POSTGRES_USER: user
+    POSTGRES_DB: db
+  expose:
+    access:
+      port: 5432
+      internal: {}
+---
+machine:
+  namespace: samples
+  name: nextjs-app-drizzle
+  build:
+    docker:
+      context: .
+      dockerfile: drizzle.dockerfile
+      name: nextjs-app-drizzle
+  restart-policy: remove
+  resources:
+    cpu: 1
+    memory: 256
+  environment:
+    DATABASE_URL: postgresql://user:password@nextjs-pg-access.samples.svc.lttle.local:5432/db
+  depends-on:
+    - name: nextjs-pg
+      namespace: samples
+---
+app:
+  namespace: samples
+  name: nextjs-app
+  build: auto
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      strategy:
+        listen-on-port: 3000
+  environment:
+    DATABASE_URL: postgresql://user:password@nextjs-pg-access.samples.svc.lttle.local:5432/db
+  depends-on:
+    - name: nextjs-pg
+      namespace: samples
+  expose:
+    public:
+      port: 3000
+      external:
+        protocol: https
