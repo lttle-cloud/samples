@@ -1,0 +1,19 @@
+app:
+  namespace: samples
+  name: react-vite
+  build: auto
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      strategy:
+        listen-on-port: 5173
+  environment:
+    NODE_ENV: production
+    PORT: "5173"
+  expose:
+    public:
+      port: 5173
+      external:
+        protocol: https
