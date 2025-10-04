@@ -5,7 +5,7 @@ This repository contains sample projects for [lttle.cloud](https://lttle.cloud).
 ## Prerequisites
 
 - An account on [lttle.cloud](https://lttle.cloud). You can follow the [Getting Started](https://docs.lttle.cloud/docs/getting-started).
-- Docker installed on your machine and a Docker Hub account to push the built image.
+- Docker installed on your machine
 
 ## Samples
 
