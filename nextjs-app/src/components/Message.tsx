@@ -23,7 +23,7 @@ export default function Message(props: MessageProps) {
 
     fetch("./api", {
       method: "POST",
-      body: JSON.stringify({ whom: value || "world" }),
+      body: JSON.stringify({ whom: value }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -40,6 +40,9 @@ export default function Message(props: MessageProps) {
         placeholder="World"
         value={value}
         onChange={(e) => setValue(e.target.value)}
+        autoFocus
+        autoCapitalize="words"
+        autoComplete="off"
       />
       !
     </p>

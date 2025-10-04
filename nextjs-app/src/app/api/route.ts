@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   const hello = await getHello();
 
-  const whom = hello?.name ?? "World";
+  const whom = hello?.name;
 
   return NextResponse.json({ whom });
 }
@@ -15,7 +15,10 @@ export async function POST(request: Request) {
   console.log("POST /api", { whom });
 
   if (typeof whom !== "string" || whom.length === 0) {
-    return NextResponse.json({ error: "Name is required" }, { status: 400 });
+    return NextResponse.json(
+      { error: "'whom' field is required" },
+      { status: 400 }
+    );
   }
 
   await upsertHello(whom);
