@@ -11,7 +11,7 @@ It demonstrates how to deploy a Next.js application using lttle.cloud's platform
 
 Make sure you are logged in to both lttle.cloud using `lttle login`.
 
-### Running locally
+## Running locally
 
 To run the project locally you will also need to have a PostgreSQL database running and accessible. We have provided a `docker-compose.yml` file to help you set up a local PostgreSQL instance.
 
@@ -24,7 +24,7 @@ To run the project locally you will also need to have a PostgreSQL database runn
 2. Create the `.env` file in the root of the project with the following content:
 
    ```env
-   DATABASE_URL=postgresql://user:password@localhost:5432/db
+   DATABASE_URL=postgres://postgres:password@localhost:5432/postgres
    ```
 
 ## Deploy
