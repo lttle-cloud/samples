@@ -9,7 +9,7 @@ This repository contains sample projects for [lttle.cloud](https://lttle.cloud).
 
 ## Samples
 
-| Name                                   | Stack                                                                    | Description                                   |
-| -------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------- |
-| [Static Site](./static-site/README.md) | [Astro](https://astro.build/), [NGINX](https://nginx.org/)               | A simple static website hosted on lttle.cloud |
-| [Next.js App](./nextjs-app/README.md)  | [Next.js](https://nextjs.org/), [Drizzle ORM](https://orm.drizzle.team/) | A Next.js application hosted on lttle.cloud   |
+| Name                                   | Stack                                                                    | Description                                   | Preview                                                             |
+| -------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------- | ------------------------------------------------------------------- |
+| [Static Site](./static-site/README.md) | [Astro](https://astro.build/), [NGINX](https://nginx.org/)               | A simple static website hosted on lttle.cloud | [Link](https://static-site--samples--public--aifrim.eu.lttle.host/) |
+| [Next.js App](./nextjs-app/README.md)  | [Next.js](https://nextjs.org/), [Drizzle ORM](https://orm.drizzle.team/) | A Next.js application hosted on lttle.cloud   | [Link](https://nextjs-app--samples--public--aifrim.eu.lttle.host/)  |
