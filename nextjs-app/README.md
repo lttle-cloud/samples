@@ -2,7 +2,7 @@
 
 This is a Next.js App Router sample project for [lttle.cloud](https://lttle.cloud).
 
-It demonstrates how to deploy a Next.js application using lttle.cloud's platform.
+It demonstrates how to deploy a Next.js application using lttle.cloud's platform. It allows you to update the name of a person you want to say hello to, and stores the data in a PostgreSQL database using Drizzle ORM.
 
 ## Prerequisites
 
