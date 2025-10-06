@@ -1,12 +1,12 @@
 volume:
-  namespace: samples
   name: nextjs-pgdata
+  namespace: samples
   mode: writeable
   size: 100Mi
 ---
 app:
-  namespace: samples
   name: nextjs-pg
+  namespace: samples
   image: ghcr.io/lttle-cloud/postgres:17-flash
   resources:
     cpu: 1
@@ -28,8 +28,8 @@ app:
       internal: {}
 ---
 machine:
-  namespace: samples
   name: nextjs-app-drizzle
+  namespace: samples
   build:
     docker:
       context: .
@@ -46,8 +46,8 @@ machine:
       namespace: samples
 ---
 app:
-  namespace: samples
   name: nextjs-app
+  namespace: samples
   build: auto
   resources:
     cpu: 1

@@ -1,6 +1,6 @@
 app:
-  namespace: samples
   name: react-vite
+  namespace: samples
   build: auto
   resources:
     cpu: 1
