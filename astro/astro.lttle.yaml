@@ -1,5 +1,6 @@
 app:
-  name: static-site
+  name: astro
+  namespace: samples
   mode:
     flash:
       strategy: first-listen
@@ -7,7 +8,6 @@ app:
     docker:
       context: .
       dockerfile: dockerfile
-  namespace: samples
   resources:
     cpu: 1
     memory: 64
