@@ -42,6 +42,6 @@ This will build two Docker images
 
 To understand how we manage to build you can checkout our documentation: [lttle.cloud Docs | Building](https://docs.lttle.cloud/docs/building-and-deploying/building).
 
-After that you can access your static site at `https://nextjs-app--samples--public--${tenant}.eu.lttle.host/` where `${tenant}` is your lttle.cloud tenant name.
+After that you can access your static site at `https://nextjs-app--samples--public--your-tenant.eu.lttle.host/` where `your-tenant` is your lttle.cloud tenant name.
 
 You can check our deployment of this sample [https://nextjs-app--samples--public--aifrim.eu.lttle.host/](https://nextjs-app--samples--public--aifrim.eu.lttle.host/).

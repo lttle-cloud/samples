@@ -23,6 +23,6 @@ lttle deploy react-vite.lttle.yaml
 
 This will build a Docker image, push it to our registry, and deploy the application. To understand how we manage to build you can checkout our documentation: [lttle.cloud Docs | Building](https://docs.lttle.cloud/docs/building-and-deploying/building).
 
-After that you can access your static site at `https://react-vite--samples--public--${tenant}.eu.lttle.host/` where `${tenant}` is your lttle.cloud tenant name.
+After that you can access your static site at `https://react-vite--samples--public--your-tenant.eu.lttle.host/` where `your-tenant` is your lttle.cloud tenant name.
 
 You can check our deployment of this sample [https://react-vite--samples--public--aifrim.eu.lttle.host/](https://react-vite--samples--public--aifrim.eu.lttle.host/).

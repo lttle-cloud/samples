@@ -18,6 +18,6 @@ lttle deploy nginx-default.lttle.yaml
 
 This will deploy the Nginx server using the official Nginx Docker image. To understand how we manage to build you can checkout our documentation: [lttle.cloud Docs | Building](https://docs.lttle.cloud/docs/building-and-deploying/building).
 
-After that you can access your Nginx server at `https://nginx-default--samples--public--${tenant}.eu.lttle.host/` where `${tenant}` is your lttle.cloud tenant name.
+After that you can access your Nginx server at `https://nginx-default--samples--public--your-tenant.eu.lttle.host/` where `your-tenant` is your lttle.cloud tenant name.
 
 You can check our deployment of this sample [https://nginx-default--samples--public--aifrim.eu.lttle.host/](https://nginx-default--samples--public--aifrim.eu.lttle.host/).
