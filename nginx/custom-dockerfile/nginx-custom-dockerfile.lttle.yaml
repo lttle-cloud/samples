@@ -17,4 +17,3 @@ app:
     flash:
       strategy:
         listen-on-port: 80
-      timeout: 2
