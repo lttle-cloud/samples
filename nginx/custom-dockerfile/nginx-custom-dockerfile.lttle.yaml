@@ -1,7 +1,10 @@
 app:
-  name: nginx
+  name: nginx-custom-dockerfile
   namespace: samples
-  image: nginx:latest
+  build:
+    docker:
+      dockerfile: dockerfile
+      context: .
   resources:
     cpu: 1
     memory: 64

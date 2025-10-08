@@ -1,0 +1,17 @@
+app:
+  name: nginx-default
+  namespace: samples
+  image: nginx:latest
+  resources:
+    cpu: 1
+    memory: 64
+  expose:
+    public:
+      port: 80
+      external:
+        protocol: https
+  mode:
+    flash:
+      strategy:
+        listen-on-port: 80
+      timeout: 2
