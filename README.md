@@ -28,6 +28,6 @@ We have grouped the samples into multiple groups
 
 #### Nginx
 
-| Name                       | Description                             | Preview                                                                                                                                                     |
-| -------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Nginx](./nginx/README.md) | Two simple Nginx server hosting samples | [Nginx Default](https://nginx--samples--public--aifrim.eu.lttle.host/) or [Nginx Custom HTML](https://nginx-custom--samples--public--aifrim.eu.lttle.host/) |
+| Name                       | Description                           | Preview                                                                                                                                                                                                                                                                                    |
+| -------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Nginx](./nginx/README.md) | Multiple Nginx server hosting samples | [Default](https://nginx-default--samples--public--aifrim.eu.lttle.host/) <br /> [Custom Dockerfile](https://nginx-custom-dockerfile--samples--public--aifrim.eu.lttle.host/) <br /> [Custom with Automated Build](https://nginx-custom-build-auto--samples--public--aifrim.eu.lttle.host/) |
