@@ -4,6 +4,8 @@ This is a statically generated Astro site sample project for [lttle.cloud](https
 
 It demonstrates how to deploy a static website using lttle.cloud's platform.
 
+This sample has been deployed using [Flash Mode](https://docs.lttle.cloud/docs/resources/machines#flash-mode) on lttle.cloud.
+
 ## Prerequisites
 
 - Node.js and npm installed on your machine. For this example we are using Node.js v22.19.
