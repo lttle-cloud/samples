@@ -6,15 +6,21 @@ app:
       dockerfile: dockerfile
       context: .
   resources:
+    # Nginx is very lightweight, so we can use minimal resources
+    # Make sure to allocate enough cpu and memory for your static site(s) needs
     cpu: 1
     memory: 64
   expose:
+    # We expose a public HTTPS endpoint that
+    # proxies to the Nginx server on port 80
     public:
-      port: 80
       connection-tracking: connection-aware
+      port: 80
       external:
         protocol: https
   mode:
     flash:
       strategy:
+        # We snapshot and save the state of the container
+        # After it has listened on port 80
         listen-on-port: 80
