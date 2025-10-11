@@ -1,7 +1,9 @@
 FROM nginx:latest
 
+# Our custom nginx config file
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
+# Our static website
 COPY ./index.html /usr/share/nginx/html/index.html
 
 # Compress all build files with gzip
