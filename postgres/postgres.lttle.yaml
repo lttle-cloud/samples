@@ -1,0 +1,28 @@
+volume:
+  name: pgdata
+  namespace: samples
+  mode: writeable
+  size: 100Mi
+---
+app:
+  name: postgres
+  namespace: samples
+  image: ghcr.io/lttle-cloud/postgres:17-flash
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      strategy: manual
+      timeout: 3
+  environment:
+    POSTGRES_PASSWORD: password
+    POSTGRES_USER: user
+    POSTGRES_DB: db
+  volumes:
+    - name: pgdata
+      path: /var/lib/postgresql/data
+  expose:
+    access:
+      port: 5432
+      internal: {}
