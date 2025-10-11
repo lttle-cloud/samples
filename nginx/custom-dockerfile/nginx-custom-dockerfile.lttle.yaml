@@ -11,6 +11,7 @@ app:
   expose:
     public:
       port: 80
+      connection-tracking: connection-aware
       external:
         protocol: https
   mode:
