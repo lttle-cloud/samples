@@ -14,6 +14,8 @@ app:
     # We expose a public HTTPS endpoint that
     # proxies to the Nginx server on port 80
     public:
+      # When there are no more active connections to our service
+      # It will be safe to snapshot & sleep our machine
       connection-tracking: connection-aware
       port: 80
       external:
