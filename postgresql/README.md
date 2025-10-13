@@ -13,7 +13,7 @@ Make sure you are logged in to both lttle.cloud using `lttle login`.
 To deploy the PostgreSQL server to lttle.cloud, run:
 
 ```bash
-lttle deploy postgres.lttle.yaml
+lttle deploy postgresql.lttle.yaml
 ```
 
 This will pull the special flash-mode ready Docker image and deploy it.
@@ -21,7 +21,7 @@ This will pull the special flash-mode ready Docker image and deploy it.
 After that you can connect to your PostgreSQL server via `psql` like so:
 
 ```bash
-lttle machine exec --ns samples postgres -i -t psql -d db -U user -W
+lttle machine exec --ns samples postgresql -i -t psql -d db -U user -W
 ```
 
 Where `-d db` is the database name, `-U user` is the username and `-W` will prompt for the password.

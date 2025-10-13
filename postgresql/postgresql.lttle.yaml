@@ -5,7 +5,7 @@ volume:
   size: 100Mi
 ---
 app:
-  name: postgres
+  name: postgresql
   namespace: samples
   image: ghcr.io/lttle-cloud/postgres:17-flash
   resources:
