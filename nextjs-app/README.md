@@ -27,6 +27,12 @@ To run the project locally you will also need to have a PostgreSQL database runn
    DATABASE_URL=postgres://postgres:password@localhost:5432/postgres
    ```
 
+3. Migrate the database schema using Drizzle Kit:
+
+   ```bash
+   npm run migrate
+   ```
+
 ## Deploy
 
 To deploy the project to lttle.cloud, run:
