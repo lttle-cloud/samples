@@ -1,0 +1,14 @@
+services:
+  pg:
+    image: ghcr.io/lttle-cloud/postgres:17-flash
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:

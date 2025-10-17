@@ -1,0 +1,27 @@
+{
+  "name": "hono-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/src/index.js",
+    "migrate": "drizzle-kit migrate",
+    "seed": "tsx src/db/seed.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.5",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.6",
+    "drizzle-seed": "^0.3.1",
+    "hono": "^4.10.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "drizzle-kit": "^0.31.5",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,96 @@
+volume:
+  name: hono-api-pgdata
+  namespace: samples
+  mode: writeable
+  size: 100Mi
+---
+app:
+  name: hono-api
+  namespace: samples
+  build: auto
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      strategy:
+        listen-on-port: 3000
+  environment:
+    DATABASE_URL: postgresql://postgres:password@hono-api-pg-internal.samples.svc.lttle.local:5432/postgres
+  depends-on:
+    - name: hono-api-pg
+      namespace: samples
+  expose:
+    public:
+      port: 3000
+      external:
+        protocol: https
+---
+app:
+  name: hono-api-pg
+  namespace: samples
+  image: ghcr.io/lttle-cloud/postgres:17-flash
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      strategy: manual
+  volumes:
+    - name: hono-api-pgdata
+      namespace: samples
+      path: /var/lib/postgresql/data
+  environment:
+    POSTGRES_DB: postgres
+    POSTGRES_PASSWORD: password
+    POSTGRES_USER: postgres
+  expose:
+    internal:
+      port: 5432
+      internal: {}
+      connection-tracking:
+        traffic-aware:
+          inactivity-timeout: 3
+---
+machine:
+  name: hono-api-drizzle-migrate
+  namespace: samples
+  build:
+    docker:
+      context: .
+      dockerfile: drizzle.dockerfile
+  command:
+    - npm
+    - run
+    - migrate
+  resources:
+    cpu: 1
+    memory: 512
+  restart-policy: remove
+  depends-on:
+    - name: hono-api
+      namespace: samples
+    - name: hono-api-pg
+      namespace: samples
+  environment:
+    DATABASE_URL: postgresql://postgres:password@hono-api-pg-internal.samples.svc.lttle.local:5432/postgres
+---
+machine:
+  name: hono-api-drizzle-seed
+  namespace: samples
+  build:
+    docker:
+      context: .
+      dockerfile: drizzle.dockerfile
+  command:
+    - npm
+    - run
+    - seed
+  resources:
+    cpu: 1
+    memory: 512
+  restart-policy: remove
+  depends-on:
+    - name: hono-api-drizzle-migrate
+  environment:
+    DATABASE_URL: postgresql://postgres:password@hono-api-pg-internal.samples.svc.lttle.local:5432/postgres

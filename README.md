@@ -18,11 +18,12 @@ We have grouped the samples into multiple groups
 
 #### JavaScript / TypeScript
 
-| Name                                   | Stack                                                                                                           | Description                                                                  | Preview                                                            |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [Astro](./astro/README.md)             | [Astro](https://astro.build/), [Nginx](https://nginx.org/)                                                      | A simple Astro generated static website hosted on lttle.cloud                | [Link](https://astro--samples--public--aifrim.eu.lttle.host/)      |
-| [Next.js App](./nextjs-app/README.md)  | [Next.js](https://nextjs.org/), [Drizzle ORM](https://orm.drizzle.team/), [PostgreSQL](https://postgresql.org/) | A simple CRUD Next.js application hosted on lttle.cloud                      | [Link](https://nextjs-app--samples--public--aifrim.eu.lttle.host/) |
-| [React + Vite](./react-vite/README.md) | [React](https://react.dev/), [Vite](https://vite.dev/)                                                          | A simple client-only React application built with vite hosted on lttle.cloud | [Link](https://react-vite--samples--public--aifrim.eu.lttle.host/) |
+| Name                                    | Stack                                                                                                           | Description                                                                  | Preview                                                            |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Astro](./astro/README.md)              | [Astro](https://astro.build/), [Nginx](https://nginx.org/)                                                      | A simple Astro generated static website hosted on lttle.cloud                | [Link](https://astro--samples--public--aifrim.eu.lttle.host/)      |
+| [Next.js App](./nextjs-app/README.md)   | [Next.js](https://nextjs.org/), [Drizzle ORM](https://orm.drizzle.team/), [PostgreSQL](https://postgresql.org/) | A simple CRUD Next.js application hosted on lttle.cloud                      | [Link](https://nextjs-app--samples--public--aifrim.eu.lttle.host/) |
+| [React + Vite](./react-vite/README.md)  | [React](https://react.dev/), [Vite](https://vite.dev/)                                                          | A simple client-only React application built with vite hosted on lttle.cloud | [Link](https://react-vite--samples--public--aifrim.eu.lttle.host/) |
+| [Hono API](./nodejs/hono-api/README.md) | [Hono](https://hono.dev/), [Drizzle ORM](https://orm.drizzle.team/), [PostgreSQL](https://postgresql.org/)      | A simple CRUD API using Hono framework hosted on lttle.cloud                 | [Link](https://hono-api--samples--public--aifrim.eu.lttle.host/)   |
 
 ### Software
 
