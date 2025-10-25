@@ -26,6 +26,9 @@ app:
     access:
       port: 5432
       internal: {}
+      connection-tracking:
+        traffic-aware:
+          inactivity-timeout: 3
 ---
 machine:
   name: nextjs-app-drizzle
