@@ -1,0 +1,22 @@
+app:
+  name: "load-balanced-hono-api-${{ var.idx }}"
+  namespace: samples
+  mode:
+    flash:
+      timeout: 1
+      strategy: first-listen
+  build:
+    docker:
+      dockerfile: load-balanced-hono-api.dockerfile
+      context: .
+  environment:
+    IDX: "'${{ var.idx }}'"
+  resources:
+    cpu: 1
+    memory: 64
+  expose:
+    access:
+      internal:
+        port: 3000
+      port: 3000
+      connection-tracking: connection-aware
