@@ -29,9 +29,9 @@ We have grouped the samples into multiple groups
 
 For Python samples we recommend you install [`uv`](https://docs.astral.sh/uv/) beforehand.
 
-| Name                                  | Stack                                    | Description                                        | Preview                                                         |
-| ------------------------------------- | ---------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------- |
-| [FastAPI](./python/fastapi/README.md) | [FastAPI](https://fastapi.tiangolo.com/) | A simple FastAPI application hosted on lttle.cloud | [Link](https://fastapi--samples--public--aifrim.eu.lttle.host/) |
+| Name                                  | Stack                                                                         | Description                                        | Preview                                                         |
+| ------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------- |
+| [FastAPI](./python/fastapi/README.md) | [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/) | A simple FastAPI application hosted on lttle.cloud | [Link](https://fastapi--samples--public--aifrim.eu.lttle.host/) |
 
 ### Software
 
