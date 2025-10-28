@@ -5,7 +5,7 @@ This repository contains sample projects for [lttle.cloud](https://lttle.cloud).
 ## Prerequisites
 
 - An account on [lttle.cloud](https://lttle.cloud). You can follow the [Getting Started](https://docs.lttle.cloud/docs/getting-started).
-- Docker installed on your machine
+- [Docker](https://www.docker.com/get-started) installed on your machine
 
 ## Samples
 
@@ -29,7 +29,6 @@ We have grouped the samples into multiple groups
 
 For Python samples we recommend you install before hand
 
-- [`pipx`](https://pipx.pypa.io/stable/installation/)
 - [`uv`](https://docs.astral.sh/uv/)
 
 | Name                                  | Stack                                    | Description                                        | Preview                                                         |

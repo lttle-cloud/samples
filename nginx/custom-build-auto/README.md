@@ -2,12 +2,6 @@
 
 This is a sample project that demonstrates how to create a custom Nginx server with a specific `index.html` file using lttle.cloud's automated build feature.
 
-## Prerequisites
-
-Docker installed on your machine.
-
-Make sure you are logged in to both lttle.cloud using `lttle login`.
-
 ## Deploy
 
 To deploy the project to lttle.cloud, run:

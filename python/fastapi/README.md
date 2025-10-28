@@ -4,15 +4,6 @@ This is a simple FastAPI application sample for [lttle.cloud](https://lttle.clou
 
 It demonstrates how to deploy a basic FastAPI application on lttle.cloud's platform.
 
-## Prerequisites
-
-- [Python 3](https://www.python.org/downloads/)
-- [pipx](https://pipx.pypa.io/stable/installation/)
-- [uv](https://docs.astral.sh/uv/)
-- [Docker](https://www.docker.com/get-started)
-
-Make sure you are logged in to lttle.cloud using `lttle login`.
-
 ## Running locally
 
 1. Install the dependencies using uv:

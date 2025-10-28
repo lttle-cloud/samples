@@ -4,13 +4,6 @@ This is a Next.js App Router sample project for [lttle.cloud](https://lttle.clou
 
 It demonstrates how to deploy a Next.js application using lttle.cloud's platform. It allows you to update the name of a person you want to say hello to, and stores the data in a PostgreSQL database using Drizzle ORM.
 
-## Prerequisites
-
-- Node.js and npm installed on your machine. For this example we are using Node.js v22.19.
-- Docker installed on your machine
-
-Make sure you are logged in to both lttle.cloud using `lttle login`.
-
 ## Running locally
 
 To run the project locally you will also need to have a PostgreSQL database running and accessible. We have provided a `docker-compose.yml` file to help you set up a local PostgreSQL instance.

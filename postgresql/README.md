@@ -4,10 +4,6 @@ This is a sample app demonstrating how to deploy a PostgreSQL database server on
 
 The sample is deployed using [Manual Flash Mode](https://docs.lttle.cloud/docs/resources/machines#manual) on lttle.cloud.
 
-## Prerequisites
-
-Make sure you are logged in to both lttle.cloud using `lttle login`.
-
 ## Deploy
 
 To deploy the PostgreSQL server to lttle.cloud, run:

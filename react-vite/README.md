@@ -4,15 +4,6 @@ This is a React + Vite sample project for [lttle.cloud](https://lttle.cloud).
 
 It demonstrates how to deploy a React application using Vite and lttle.cloud's platform.
 
-This sample has been deployed using [Flash Mode](https://docs.lttle.cloud/docs/resources/machines#flash-mode) on lttle.cloud.
-
-## Prerequisites
-
-- Node.js and npm installed on your machine. For this example we are using Node.js v22.19.
-- Docker installed on your machine
-
-Make sure you are logged in to both lttle.cloud using `lttle login`.
-
 ## Deploy
 
 To deploy the project to lttle.cloud, run:

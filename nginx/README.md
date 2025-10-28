@@ -8,12 +8,6 @@ This directory contains multiple samples of hosting Nginx servers on lttle.cloud
 
 All of these samples have been deployed using [Flash Mode](https://docs.lttle.cloud/docs/resources/machines#flash-mode) on lttle.cloud.
 
-## Prerequisites
-
-Docker installed on your machine.
-
-Make sure you are logged in to both lttle.cloud using `lttle login`.
-
 ## Deploying the Samples
 
 Visit the respective directories for each sample to find detailed instructions on how to deploy them.

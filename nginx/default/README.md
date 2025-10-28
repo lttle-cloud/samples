@@ -2,12 +2,6 @@
 
 This is a sample project that uses the official Nginx Docker image to run a default Nginx server on lttle.cloud.
 
-## Prerequisites
-
-Docker installed on your machine.
-
-Make sure you are logged in to both lttle.cloud using `lttle login`.
-
 ## Deploy
 
 To deploy the project to lttle.cloud, run:
