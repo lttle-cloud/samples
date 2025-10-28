@@ -1,0 +1,19 @@
+app:
+  namespace: samples
+  name: fastapi
+  build:
+    docker:
+      dockerfile: dockerfile
+      context: .
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      strategy:
+        listen-on-port: 8000
+  expose:
+    public:
+      port: 8000
+      external:
+        protocol: https

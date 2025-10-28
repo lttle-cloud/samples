@@ -25,6 +25,17 @@ We have grouped the samples into multiple groups
 | [React + Vite](./react-vite/README.md)  | [React](https://react.dev/), [Vite](https://vite.dev/)                                                          | A simple client-only React application built with vite hosted on lttle.cloud | [Link](https://react-vite--samples--public--aifrim.eu.lttle.host/) |
 | [Hono API](./nodejs/hono-api/README.md) | [Hono](https://hono.dev/), [Drizzle ORM](https://orm.drizzle.team/), [PostgreSQL](https://postgresql.org/)      | A simple CRUD API using Hono framework hosted on lttle.cloud                 | [Link](https://hono-api--samples--public--aifrim.eu.lttle.host/)   |
 
+#### Python
+
+For Python samples we recommend you install before hand
+
+- [`pipx`](https://pipx.pypa.io/stable/installation/)
+- [`uv`](https://docs.astral.sh/uv/)
+
+| Name                                  | Stack                                    | Description                                        | Preview                                                         |
+| ------------------------------------- | ---------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------- |
+| [FastAPI](./python/fastapi/README.md) | [FastAPI](https://fastapi.tiangolo.com/) | A simple FastAPI application hosted on lttle.cloud | [Link](https://fastapi--samples--public--aifrim.eu.lttle.host/) |
+
 ### Software
 
 | Name                                 | Description                           | Preview                                                                                                                                                                                                                                                                                    |
