@@ -27,9 +27,7 @@ We have grouped the samples into multiple groups
 
 #### Python
 
-For Python samples we recommend you install before hand
-
-- [`uv`](https://docs.astral.sh/uv/)
+For Python samples we recommend you install [`uv`](https://docs.astral.sh/uv/) beforehand.
 
 | Name                                  | Stack                                    | Description                                        | Preview                                                         |
 | ------------------------------------- | ---------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------- |
