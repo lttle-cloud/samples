@@ -1,4 +1,4 @@
-import "dotenv/config.js";
+import "dotenv/config";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { seed } from "drizzle-seed";
 import { item, list } from "./schema";
