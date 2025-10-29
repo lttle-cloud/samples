@@ -1,0 +1,19 @@
+app:
+  namespace: samples
+  name: websocket-server
+  build: auto
+  resources:
+    cpu: 1
+    memory: 256
+  mode:
+    flash:
+      timeout: 2
+      strategy:
+        listen-on-port: 8000
+  expose:
+    public:
+      port: 8000
+      external:
+        protocol: https
+  environment:
+    WS_URL: "websocket-server--samples--public--${{ lttle.tenant }}.eu.lttle.host"

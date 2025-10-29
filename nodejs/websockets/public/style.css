@@ -1,0 +1,85 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  font-family: monospace;
+
+  margin: 10px;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+#msg {
+  transition: all 0.2s ease-in-out;
+
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#cmd {
+  padding: 10px;
+  border-radius: 5px;
+
+  display: inline-block;
+
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #fff;
+  }
+
+  #msg {
+    border-color: #666;
+    background-color: #000;
+  }
+
+  #cmd {
+    background-color: #000;
+  }
+
+  #msg:not(.success):not(.error) {
+    color: #fff;
+  }
+
+  #msg.success {
+    color: #00aa00;
+  }
+
+  #msg.error {
+    color: #aa0000;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #eee;
+    color: #000;
+  }
+
+  #msg {
+    border-color: #aaa;
+    background-color: #fff;
+  }
+
+  #cmd {
+    background-color: #fff;
+  }
+}
