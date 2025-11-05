@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>WebSocket Sample | lttle.cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // nginx replaces __WS_URL__ with the actual WebSocket URL
+      // If we are running locally, it will be ws://localhost:8000
+      // Otherwise it will be something like wss://something.lttle.host
+      const WS_URL =
+        window.location.href.includes("localhost") ||
+        window.location.href.includes("127.0.0.1")
+          ? "ws://__WS_URL__"
+          : "wss://__WS_URL__";
+    </script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <img src="./logo.svg" alt="lttle.cloud" width="100" />
+      <div>Sending a message every 10 seconds</div>
+      <div id="msg">Waiting 10s...</div>
+      <div>
+        While waiting run this command to see the status of the machine.
+        <br />
+        In-between messages the connection should be kept alive and the machine
+        put to sleep.
+      </div>
+      <div id="cmd">lttle machine get --ns samples websocket-server</div>
+      <div>and check the <u>status</u> field</div>
+    </div>
+  </body>
+</html>
