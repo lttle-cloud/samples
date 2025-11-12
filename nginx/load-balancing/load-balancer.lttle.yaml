@@ -1,0 +1,22 @@
+app:
+  name: load-balanced-nginx-ingress
+  namespace: samples
+  mode:
+    flash:
+      timeout: 1
+      strategy: first-listen
+  build:
+    docker:
+      dockerfile: load-balanced-ingress.dockerfile
+      context: .
+  resources:
+    cpu: 1
+    memory: 64
+  expose:
+    access:
+      port: 80
+      external:
+        protocol: https
+      connection-tracking:
+        traffic-aware:
+          inactivity-timeout: 3
